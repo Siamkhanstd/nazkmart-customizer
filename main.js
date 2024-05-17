@@ -182,19 +182,19 @@ gltfLoader.load(
         child.children[1].material.depthTest = false;
       }
 
-      if (child.name === 'Book') {
-        bookCover = child.children[0];
+      // if (child.name === 'Book') {
+      //   bookCover = child.children[0];
 
-        // adding texture to book
-        const bookTexture = new THREE.TextureLoader().load(
-          'textures/book-inner.jpg'
-        );
-        bookTexture.flipY = false;
-        child.material = new THREE.MeshStandardMaterial({
-          color: 0xffffff,
-          map: bookTexture,
-        });
-      }
+      //   // adding texture to book
+      //   // const bookTexture = new THREE.TextureLoader().load(
+      //   //   'textures/book-inner.jpg'
+      //   // );
+      //   bookTexture.flipY = false;
+      //   child.material = new THREE.MeshStandardMaterial({
+      //     color: 0xffffff,
+      //     map: bookTexture,
+      //   });
+      // }
 
       if (child.name === 'SwitchBoard') {
         lightSwitch = child.children[0];
